@@ -30,8 +30,8 @@ Behavior
 
 When a JavaScript error occurs or an uncaught exception is thrown, siren.js records the error,
 collects information about the environment, and reports this to a server. Using the dashboard
-on [sirenjs.com](sirenjs.com/about/dashboard) or by creating your own, you can see when errors
-happen.
+on [sirenjs.com](sirenjs.com/about/dashboard) or by creating your own, you can see when and
+what errors happen.
 
 ### Information Collected ###
 
