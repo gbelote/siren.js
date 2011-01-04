@@ -3,7 +3,7 @@ siren.js
 
 The goal of siren.js is to make it easy to get visibility into issues that happen
 with your users that are client-side. Are IE7 users getting a JS error, thus breaking
-your shopping cart? Find out with siren.js!
+your shopping cart? siren.js makes it easy to know!
 
 Get Started
 -----------
@@ -46,7 +46,28 @@ siren.js is loaded, like so:
 
 Options include:
 
-* `host` - Defines the server siren.js reports to. _default: `report.sirenjs.com`_
+* `host` - Server siren.js reports to. Default: `report.sirenjs.com`
 
-* `error_endpoint` - Defines the URI siren.js POSTs to when reporting errors. _default: `/sirenjs/error`_
+* `error_endpoint` - URI siren.js POSTs to when reporting errors. Default: `/sirenjs/error`
+
+* `account_token` - *Only relevant for sirenjs.com accounts.* Account token for your sirenjs.com subscription. Default `null`
+
+Running your own reporting server
+---------------------------------
+
+While [sirenjs.com](sirenjs.com) provides a freemium reporting service for siren.js, you have the freedom and
+flexibility to run your own. Here's how:
+
+1. Edit the siren.js configuration `host` property to point towards your own server. Example:
+    <script type="text/javascript">
+        sirenjs_config = {
+            host: "example.com"
+        };
+    </script>
+
+2. Setup your server to handle POST requests to `/sirenjs/error` or configure a custom endpoint (See Configuration).
+
+3. Serve `siren.js` from your own server. Example:
+    <script type="text/javascript" id="sirenjs" src="//example.com/siren.js"></script>
+
 
