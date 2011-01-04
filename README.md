@@ -10,14 +10,14 @@ Get Started
 
 To get started, simply add
 
-    <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.js"></script>
+    <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.min.js"></script>
 
 to the top of your page. Like:
 
     <!DOCTYPE html>
     <html>
       <head>
-        <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.js"></script>
+        <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.min.js"></script>
 
         <title>Example</title>
         ......
@@ -55,7 +55,7 @@ siren.js is loaded, like so:
                 // ... config here ...
             };
         </script>
-        <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.js"></script>
+        <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.min.js"></script>
 
         <title>Example</title>
         ......
