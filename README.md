@@ -25,6 +25,22 @@ to the top of your page. Like:
 This will start collecting JavaScript errors and send them to [sirenjs.com](javascript:).
 You can configure siren.js to report to a custom server, see Configuration for details.
 
+Behavior
+--------
+
+When a JavaScript error occurs or an uncaught exception is thrown, siren.js records the error,
+collects information about the environment, and reports this to a server. Using the dashboard
+on [sirenjs.com](sirenjs.com/about/dashboard) or by creating your own, you can see when errors
+happen.
+
+### Information Collected ###
+
+siren.js captures the following by default:
+
+* The error/exception object
+
+* Page URL
+
 Configuration
 -------------
 
