@@ -41,6 +41,8 @@ siren.js captures the following by default:
 
 * Page URL
 
+* Browser statistics (browser type, version, flash version, etc)
+
 Configuration
 -------------
 
