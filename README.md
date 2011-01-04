@@ -28,5 +28,25 @@ You can configure siren.js to report to a custom server, see Configuration for d
 Configuration
 -------------
 
+Global configuration for siren.js is done by defining a hash `sirenjs_config` before
+siren.js is loaded, like so:
 
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <script type="text/javascript">
+            sirenjs_config = {
+                // ... config here ...
+            };
+        </script>
+        <script type="text/javascript" id="sirenjs" src="//cdn.sirenjs.com/siren.js"></script>
+
+        <title>Example</title>
+        ......
+
+Options include:
+
+* `host` - Defines the server siren.js reports to. _default: `report.sirenjs.com`_
+
+* `error_endpoint` - Defines the URI siren.js POSTs to when reporting errors. _default: `/sirenjs/error`_
 
