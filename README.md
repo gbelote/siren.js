@@ -88,4 +88,3 @@ flexibility to run your own. Here's how:
 3. Serve `siren.js` from your own server. Example:
     <script type="text/javascript" id="sirenjs" src="//example.com/siren.js"></script>
 
-
